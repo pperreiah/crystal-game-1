@@ -1,0 +1,57 @@
+
+  body {
+    background-image: url('../images/background.jpg');
+    background-repeat: no-repeat, no-repeat;
+    background-size: 100% 100%;
+    background-position: center, bottom;
+  }
+
+
+.jumbotron {
+	height: 100px;
+	background-color: blue;
+	margin-top: 0px;
+	color: silver;
+	margin-bottom: 10px;
+	padding-top: 30px;
+	vertical-align: :center;
+}
+
+#instructions {
+	background-color: lightbeige;
+}
+.img-1 {
+	size: 150em 150em;
+	border: 2px solid black;
+}
+
+#imagepanel {
+	align-items: center;
+}
+
+h1 {
+	margin-top: -15px;
+}
+h2 {
+	font-weight: bold;
+	font-size: 30px;
+}
+
+#randomnumberdisplay {
+	font-size: 90px;
+	color: darkblue;
+	text-align: center;
+} 
+
+#usersumdisplay {
+	font-size: 90px;
+	color: darkblue;
+	text-align: center;
+}
+
+#tallieshandle {
+	font-size: 40px;
+	color: darkblue;
+	font-weight: bold;
+	text-align: center;
+}
