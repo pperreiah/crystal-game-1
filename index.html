@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title>Crystal Game</title>
+
+	<!-- Added a link to Bootstrap-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	
+	<link rel ="stylesheet" type="text/css" href ="./assets/css/style.css" />
+
+    <!-- Added link to the jQuery Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+</head>
+
+
+<body>
+
+	<!-- Jumbotron for Title -->
+	<div class="jumbotron">
+	    <h1 class="text-center" id="my-title">Crystals Collector!</h1>
+	</div>
+
+    <div class="container center-align">
+        
+        <div class="row">
+	        <!-- Instructions Panel -->
+	        <div class="col-sm-4">
+	            <div class="panel panel-default">
+	                
+	                <div class="panel-heading">
+	                    <h2 id="instructionspanelheader" class="panel-title panel-title1">Instructions:</h2>
+	                </div>
+
+	                <div class="panel-body instructionspanel">
+			            <p>You will be given a random number to match at the start of the game.</p>
+			            <p>There are four crystals below.  By clicking on a crystal you will add a specific number of points to your crystal total.</p>
+			            <p>You win the game by matching your crystal total to a the random number.  You lose if your crystal total goes above the random number.</p>
+			            <p>The value of each crystal is hidden from you until you click on it. </p>
+			            <p>Each time a new round starts, the values of each crystal change.</p>
+	        		</div>
+				</div>
+			</div>
+
+
+    		<div class="container center-align col-sm-3 offset-4">
+				
+				<!-- Random Number Panel -->
+		            <div class="panel panel-default">             
+		                <div class="panel-heading">
+		                    <h2 id="randomnumberpanelheader" class="panel-title panel-title1">Number to match:</h2>
+		                </div>
+
+		        		<div id="randomnumberdisplay">###</div>
+		    		</div>
+
+
+				<!-- User Sum Panel -->
+		            <div class="panel panel-default">             
+		                <div class="panel-heading">
+		                    <h2 id="usersumpanelheader" class="panel-title panel-title1">Current crystal total:</h2>
+		                </div>
+
+		        		<div id="usersumdisplay">###</div>
+		    		</div>
+
+	 		</div>		        	
+
+    		<div class="container center-align col-sm-3 offset-7">
+				
+				<!-- Game Tally Panel -->
+		            <div class="panel panel-default" id="gametallypanel">             
+		                <div class="panel-heading">
+		                    <h2 id="gametallypanelheader" class="panel-title panel-title1">Game Tally:</h2>
+		                </div>
+		                <div id="tallieshandle">
+				        	<div id="winlossmsg">You won/lost!</div>
+			        		<div id="winct">Wins: </div>
+			        		<div id="lossct">Losses: </div>
+			        	</div>	
+		    		</div>
+	 		</div>
+
+	 	</div>
+
+
+        <!-- Image Panel -->
+
+            <div class="panel panel-default col-sm-10">
+                <div class="panel-heading">
+                    <h2 id="imgpanelheader" class="panel-title panel-title1">Click on a crystal:</h2>
+                </div>
+
+                <div class="panel-body imagePanel" id="imagepanel">
+                   	
+                   	<img id="crystala" class="img-1 img-fluid rounded" src="./assets/images/crystal1.jpg" alt="Crystal 1 Image">
+                   	<img id="crystalb" class="img-1 img-fluid rounded" src="./assets/images/crystal2.jpg" alt="Crystal 1 Image">
+                   	<img id="crystalc" class="img-1 img-fluid rounded" src="./assets/images/crystal3.jpg" alt="Crystal 1 Image">
+                    <img id="crystald" class="img-1 img-fluid rounded" src="./assets/images/crystal4.jpg" alt="Crystal 1 Image">                  	                   	         
+                </div>
+            </div>
+	
+	<script type="text/javascript" src="./assets/javascript/game.js"></script>
+
+
+</body>
+</html>
