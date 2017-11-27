@@ -27,6 +27,8 @@
 
 #imagepanel {
 	align-items: center;
+	display: flex;
+    justify-content:space-around; 
 }
 
 h1 {
